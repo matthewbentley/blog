@@ -305,3 +305,7 @@ article section img {
 .comment-body {
     background: #f6f6f6;
 }
+
+.submit-error {
+    color: red;
+}

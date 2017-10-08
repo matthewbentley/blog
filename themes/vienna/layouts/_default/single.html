@@ -23,14 +23,31 @@
 
   <section>
     <div id="comments">
-      <script type="text/javascript">
+    </div>
+    <div id="submit-comments">
+      <div id="submit-error" class="submit-error"></div>
+      <form id="submit-form" title="">
+        Name:<br /><input id="submit-name" name="name" type="text" /><br />
+        Website (optional):<br /><input id="submit-website" name="website" type="text" /><br />
+        Comment:<br /><textarea id="submit-comment" name="comment"></textarea><br />
+
+        <input type="submit" id="submit-button" />
+      </form>
+    </div>
+    <script type="text/javascript">
+      var renderComments = () => {
         const article = window.location.pathname.split('/')[1];
         var a = $.get(`/comment/${article}/`, function(data, err) {
           console.log(data, err);
 
           var c = $('#comments')[0];
+          c.innerHTML = "";
 
           var comments = data.Items;
+            
+          if (comments.length != 0) {
+              c.innerHTML += `<h1>Comments</h1>`;
+          }
 
           for (var i in comments) {
             var com = comments[i];
@@ -50,8 +67,59 @@
             c.innerHTML += toAdd;
           }
         });
-      </script>
-    </div>
+      };
+      renderComments();
+      var formEnabled = true;
+      var submitForm = (event) => {
+        if (!formEnabled) {
+          return false;
+        }
+        var form = $(this);
+        console.log(form);
+        const name = $("#submit-name")[0].value;
+        const website = $("#submit-website")[0].value;
+        const comment = $("#submit-comment")[0].value;
+        const article = window.location.pathname.split('/')[1];
+        toggleForm();
+        $("#submit-error")[0].innerHTML = "";
+
+        var a = $.ajax({
+          type: "POST",
+          beforeSend: function(req) {
+            req.setRequestHeader("X-Comment-Name", name);
+            req.setRequestHeader("X-Comment-Website", website);
+            req.setRequestHeader("X-Comment-Comment", comment);
+          },
+          url: `/comment/${article}`,
+          success: function(msg) {
+            console.log(msg);
+            if (msg.result === "error") {
+              $("#submit-error")[0].innerHTML = `Error: ${msg.reason}`;
+            } else {
+              renderComments();
+              $("#submit-name")[0].value = "";
+              $("#submit-website")[0].value = "";
+              $("#submit-comment")[0].value = "";
+            }
+            toggleForm();
+          },
+          error: function(err) {
+            $("#submit-error")[0].innerHTML = `Error: ${err}`;
+            toggleFrom();
+          }
+        });
+        return false;
+      }
+      $( "#submit-form" ).submit(submitForm);
+      var toggleForm = () => {
+        formEnabled = !formEnabled;
+        $("#submit-name")[0].disabled = !$("#submit-name")[0].disabled;
+        $("#submit-website")[0].disabled = !$("#submit-website")[0].disabled;
+        $("#submit-comment")[0].disabled = !$("#submit-comment")[0].disabled;
+        $("#submit-button")[0].disabled = !$("#submit-button")[0].disabled;
+      };
+
+    </script>
   </section>
 
   <footer>
