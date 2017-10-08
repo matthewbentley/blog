@@ -27,6 +27,27 @@
         const article = window.location.pathname.split('/')[1];
         var a = $.get(`/comment/${article}/`, function(data, err) {
           console.log(data, err);
+
+          var c = $('#comments')[0];
+
+          var comments = data.Items;
+
+          for (var i in comments) {
+            var com = comments[i];
+            const body = $('<div/>').text(com.comment.S).html();
+            const name = $('<div/>').text(com.name.S).html();
+            const date = $('<div/>').text(new Date(parseInt(com.ts.N))).html();
+            const website = $('<div/>').text(com.website.S).html();
+            var toAdd = `<div class="one-comment"><div class="comment-name">`;
+            if (website !== 'null') {
+              toAdd += `<a href="${website}">`;
+            }
+            toAdd += `${name}`;
+            if (website !== 'null') {
+              toAdd += `</a>`;
+            }
+            toAdd += `</div><div class="comment-time">${date}</div><div class="comment-body">${body}</div></div>`;
+            c.innerHTML += toAdd;
         });
       </script>
     </div>
