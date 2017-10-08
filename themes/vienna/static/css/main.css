@@ -293,3 +293,15 @@ article section img {
     height: auto;
     margin: 13px auto;
 }
+
+.comment-name {
+    font-size: 20px;
+}
+
+.comment-time {
+    font-size: 12px;
+}
+
+.comment-body {
+    background: #f6f6f6;
+}
