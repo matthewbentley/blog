@@ -25,6 +25,7 @@
     <div id="comments">
     </div>
     <div id="submit-comments">
+      <h2>Add a comment</h2>
       <div id="submit-error" class="submit-error"></div>
       <form id="submit-form" title="">
         Name:<br /><input id="submit-name" name="name" type="text" /><br />
@@ -54,7 +55,10 @@
             const body = $('<div/>').text(decodeURI(com.comment.S)).html().replace(/\n/g, '<br />');
             const name = $('<div/>').text(com.name.S).html();
             const date = $('<div/>').text(new Date(parseInt(com.ts.N))).html();
-            const website = $('<div/>').text(com.website.S).html();
+            var website = $('<div/>').text(com.website.S).html();
+            if (!website.startsWith('http')) {
+              website = "http://" + website;
+            }
             var toAdd = `<div class="one-comment"><div class="comment-name">`;
             if (website !== 'null') {
               toAdd += `<a href="${website}">`;
