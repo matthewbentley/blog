@@ -56,7 +56,7 @@
             const name = $('<div/>').text(com.name.S).html();
             const date = $('<div/>').text(new Date(parseInt(com.ts.N))).html();
             var website = $('<div/>').text(com.website.S).html();
-            if (!website.startsWith('http')) {
+            if (!website.startsWith('http') && website !== 'null') {
               website = "http://" + website;
             }
             var toAdd = `<div class="one-comment"><div class="comment-name">`;
