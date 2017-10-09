@@ -51,7 +51,7 @@
 
           for (var i in comments) {
             var com = comments[i];
-            const body = $('<div/>').text(com.comment.S).html();
+            const body = $('<div/>').text(decodeURI(com.comment.S)).html().replace(/\n/g, '<br />');
             const name = $('<div/>').text(com.name.S).html();
             const date = $('<div/>').text(new Date(parseInt(com.ts.N))).html();
             const website = $('<div/>').text(com.website.S).html();
@@ -78,7 +78,7 @@
         console.log(form);
         const name = $("#submit-name")[0].value;
         const website = $("#submit-website")[0].value;
-        const comment = $("#submit-comment")[0].value;
+        const comment = encodeURI($("#submit-comment")[0].value);
         const article = window.location.pathname.split('/')[1];
         toggleForm();
         $("#submit-error")[0].innerHTML = "";
@@ -104,8 +104,9 @@
             toggleForm();
           },
           error: function(err) {
+            console.log(err);
             $("#submit-error")[0].innerHTML = `Error: ${err}`;
-            toggleFrom();
+            toggleForm();
           }
         });
         return false;
