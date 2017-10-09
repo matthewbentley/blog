@@ -111,7 +111,7 @@ These lambda@edge functions can also access the AWS API, such as the API for
 dynamodb.  As such, I thought I'd do something a bit more compilicated with
 it...
 
-Comments!
+Introducing Comments!
 ===
 As you probably haven't noticed, this blog now supports comments!  But how? you
 might ask.  I thought this blog was serverless?
