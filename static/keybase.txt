@@ -1,0 +1,159 @@
+==================================================================
+https://keybase.io/bentley
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://bentley.link
+  * I am bentley (https://keybase.io/bentley) on keybase.
+  * I have a public key with fingerprint 3553 0A74 FC09 7779 4656  616B 0A6C 4292 C27B 8863
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017374210753f1da4336a17751339270aa94e04f6742e4d44d55e9ef7b7de30dd70a",
+      "fingerprint": "35530a74fc0977794656616b0a6c4292c27b8863",
+      "host": "keybase.io",
+      "key_id": "0a6c4292c27b8863",
+      "kid": "01017374210753f1da4336a17751339270aa94e04f6742e4d44d55e9ef7b7de30dd70a",
+      "uid": "48cae81ee201d41c260d06a2933b8500",
+      "username": "bentley"
+    },
+    "merkle_root": {
+      "ctime": 1507671537,
+      "hash_meta": "2eb02ecb33470acca7b58b8bcfc6cec80bcd3aea988ed2c2a77c031c8d11e821",
+      "seqno": 1555163
+    },
+    "revoke": {
+      "sig_ids": [
+        "203561238febc791cd715a35fb22ed4ed13932bbc93c957b77892a232c1c81e80f"
+      ]
+    },
+    "service": {
+      "hostname": "bentley.link",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1507671539,
+  "expire_in": 157680000,
+  "prev": "fa1783392f34acf36592ae2a0d20eaf3c443f1ee3b98c9b6460a0a011481fd8a",
+  "seqno": 26,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtU3tQFVUcvgoqPpjMipIB0hVfgXbOnn2STg+V8YXdZjK8at3Onj0r273cS3fX
+KyQPFcfJJ8IYRk7eTLPIcQoQHae6iqZZGprYwOiQhhIy1viELJI6azlN9W+7f+yc
+s9/v+77f9ztnY3yMK65Py9kTXbmfJZzuc7xTc3laJ/+8lNOCegGXsZTz0bsf6tep
+ZXt9ps5lcAACKCNZ4CGQRWRAHQsISRjKsggRUnkZYKwKFAiGxEBU0AVBF0WqUkPW
+ZJ0ioOsMwqVzhhlYREN5ITNgM1okighgWTAIUGVZVgVJlCQoaQBLROBVnvCypigS
+YoU5QcupYOY0bNGJZpDtsYX3T3v/xf/PvhffpRMUgqkCKeUB1AVIeAnoQMK8ipCm
+iAA4QIuGAjiXMrRGA7afhVmUzuXSkM9PvaFg0HayJbbpIKAIZEmGIpJZf9jK8eZS
+G7NCnmqAp0RDSGDqhGBZExVN0YhBJEKJAjSiI0yxqihUZ01jWSYAQaLoEFKFh8yG
+RV8NBB0FUYQSYg5CNBz0UUfcMhex1CwuYwHHAyRKB8OQR4pBNSKrkOjMD0aiofE8
+1QWqQ6QiXtOIiogqslBkReUxj3jC5JgYMLgXixy5UNgkd+mdQf0zgIl+M+BjnvJC
+QTtIgn72J8e286wMJxm7IM+BLqGa9y8Sr2YGdHZMWEWYhiwzGGB9MOS/Q1PTOZqf
+Z4ao13QQoiwpgD2ODg0zSoONWXGGbCABEwNJInNOeQx0HlBsICII7ERQijRVIaom
+CRLA7IVQUKChK/jvFHmJ+cSLGCfLLoDtxSHKFQ1a3RfFuvrEuZITRsbemv3YgAU9
+/T3BozOa7l2tfn2de+UaNHDovZ3sivt6UzeN3GZHW15qebzVHng2bdfrab0Xnwt0
++pNvxD+Rv7Bl80M1kavW8hWlQxqe6qi9sO7qT/GuUeu4Oq7xu6rDY0Ijzv+K4srd
++ccyL5vj3hw2NHoTp45u9fCvHKg8fuu16VNLEo6s+rJ83MfdkficmEtTurd0dD2y
+yp3V4CsbAioTX06A1cVpalNV24ntV90D9rqs5EGRAyvSYt673pwcWzwwWBrufyfz
+yZKV0ZN1m92dh2dEN3hmf7LfOPrt9cL2qur5n/82rAxkTp66c9bMWecePt9R754d
+mzRVOPLuG9HSfLFmbUx6RWrdktON33iPzW+bu+Vcyp6xSwrdJzMe7NfflZqa2nmz
+JDPQTtbsb+1J8q55YcTNcrHjTI1ePb582u9tJRf3HMnq9D/TMWFHiet22bb6ru7J
+1/Ir3Od6Ysaf2i3+eOX53q8iVdHs6iljv1i/94HFcY0fTUpYXnkjf6Hy9uqduOjR
+cOOucfVlnmXTBm9cljvv/oa++8resa6NNv0N0cjTbYO3Thrz7IisivKirE8TC9ef
+uvJ9YiG8lpLyiy86qybpNK1XsnZlX4TbV/pm/FD6waGFKRN8tTsC7a5h8WfmJepJ
+ac0pbxWvndvVTLQPPU0Ru7047sLl293vFxiXNg3fXTs8GhEKNs+MSdl6J/HEtuGT
+5lRmf33JM8ctbVixfNTQpuaD+6b7UY9+6tD83j8A
+=jx3L
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bentley
+
+==================================================================
+
+==================================================================
+https://keybase.io/bentley
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://bentley.blog
+  * I am bentley (https://keybase.io/bentley) on keybase.
+  * I have a public key with fingerprint 3553 0A74 FC09 7779 4656  616B 0A6C 4292 C27B 8863
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017374210753f1da4336a17751339270aa94e04f6742e4d44d55e9ef7b7de30dd70a",
+      "fingerprint": "35530a74fc0977794656616b0a6c4292c27b8863",
+      "host": "keybase.io",
+      "key_id": "0a6c4292c27b8863",
+      "kid": "01017374210753f1da4336a17751339270aa94e04f6742e4d44d55e9ef7b7de30dd70a",
+      "uid": "48cae81ee201d41c260d06a2933b8500",
+      "username": "bentley"
+    },
+    "service": {
+      "hostname": "bentley.blog",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1507671612,
+  "expire_in": 157680000,
+  "prev": "235a72f0474f9a455fe1fb8a59ab79fb28823ecf05c2bf4c4eb55b260e72f0f9",
+  "seqno": 27,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkmtQVVUUxy8PBWkERogMRbyHRCcec977njuIw8hDJsUiChxlLuexz+XA5Zzb
+vYeLSDYQkEoxoUk4lRQ2NUjElEiDCIqOIUwJKCGPhHIYxRpekuBoOHaO5Yemr+0v
+e/bav/9/r7X2qlrpYfB2Gx79cSGvI+ia2w+/cYZdY7GxRQinCIWIuQjJhU82aBOg
+U7XkSgJiRlAMxQABSBxDAUWImMCSBEGzGAAURhAMDlCWZUiIkiKtQZAUSFKgKMhA
+EXBAgAQqCBqCRCKiJFuhw+6QZFWzJSiKQFlAijzKAAAYkqZoGqM5lKV5EmdwHgec
+yUQTmjBbceoKLTmOdcJoSdFi2sHyd3r/5f/nvPOf2JEmnoUmDEIcxQQS43EaFVCa
+xRmC4EwUiuqgEzpkNg9qNAdl1aY1c38kogVdEg/1vuqF/BuI5myKVZPaHYqq8IpN
+u8lWVbvTrCvVQruOFkDO8o+JhZNkQWujpnBBh1NSZMSMaSSvSrorRqGABhiN4ZEI
+3GuXHNAi6QQFaBOqLf0d6NIscYJiAS6iGaT2AQxLUpQIMZEzsRTDcoAROdxkwgnI
+iyjF45xI8iTkKIrTaoa6TGQQva43ZAUx40BLlLVqpk7JKrNqvgMi+30OuROeBjdv
+Q0iQ0fPe9he9dv+5fJfSlTzwdPaWueuDZ/BZ4f80Yon1N7SFhAxXrdmdMx9w+3Xb
+Yd82oyIcffz+szFTXFtTQ07Jpuo+tVHGi9ITfXOmP+/P/D50dqCq/0gx/+tkivXe
+y8Kl2dbFryvVilo4d60UnwjEyPIrA6dYf5qLaC2803yrM8ijODXN86PuP/y2wrM7
+w3nKOPrZYnfNEB2TGWxMulzZcuzMNLVn2/2M1a7a2bH+PdO/V/30aM3ke+uk6tMH
+3V79+epImdFmXLUvsSd0xhSffbCuZnTz5bQX5pYWA5cPz3V+eNy/ZyE+8a2L4w/b
+PdwO+AydLQ7OGne5RnpdLau3BpgnP7iwuP5BYUfciYuD71rd2xv6ipUyrnH0zV62
+sZWGzSlLc/HWo885u+xx7AMYav7Ws6q7pmGjoSeq4Yt1AXm/rM2KcH5T3TAlX6k8
+M+Gq8aNybs9fCtvpm+U9tzc+KmXtyfxN5Wnpz8ReXRnpykxNXtX8Tl/oqY/Lch+f
+fPtcWPR3N3awKeXnMxbmP62drH545EDweTVMLgA3xpoi0puRikfhCUsJnHffMVDS
+6bn+dGm3F58YntTskzI1OXPceM6VcPjL+dKsgsAtqa0T5EsbkivEgeHrJSOxHRF5
+N3O39U6Mx90NjKm/U7/5xLwxLaLC/NXg9VufmF/ZskHK8CpIWvTo8q4falp2E818
+7e6hGQPS/vz0xroL++pKiJGWqMGFFex9v7q/AA==
+=2GnT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bentley
+
+==================================================================
+
