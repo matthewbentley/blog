@@ -13,3 +13,4 @@ deploy:
   region: us-east-1
   on:
     branch: master
+  skip_cleanup: true
