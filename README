@@ -1,0 +1,7 @@
+The source for [my blog](https://bentley.link)
+
+Travis will run, and on pushes to master update staging.bentley.link,
+and on pushes of a tag update bentley.link
+
+See [here](https://github.com/matthewbentley/blog-terraform) for the terraform
+for the blog
