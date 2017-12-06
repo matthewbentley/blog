@@ -4,7 +4,7 @@ before_script:
 script:
 - hugo --theme vienna -v
 deploy:
-  provider: s3
+- provider: s3
   access_key_id: AKIAI4UZ4LBMFLDFZ7UA
   secret_access_key:
     secure: zyExFiJM+qPRTT0ZGdejHKYKRgcn7/6aiuaKnNMrkDMKX25eXXJC6gkdMrNvrz0OnxWJzfhG7PauRkbXxN6VsyC5JUk4+uKnIw+fJKNhBIqLdyGHIl/ySBvqJVKtXyGDKhBIpR0sgT7p8JyQU6XhHhzZXwoqUcEytQe3MEHAA9TdYZ/OTc4pTvd8tZbZyED/AW5QXvnopFm1Psc77b50ilPQzCDF4qoB6znEt1pIOA30xhMUCDYnBlRF7iIAIgKxhCuIQxUQG/My3daaa15IX/yXrts9MJ8WHq6H+UyXXuSaBxtL6XVCEQzuLwWMYvJsH3pPy1groyFFedANx/x42fq2z0wGWJHGdQEXnSt1IhCi95swuK/k2YqPsoGvYkJ3+sdmga7AdTXwDXoK25SfGL6Dz/ZT4fMUbRlChrzPMGvzTKhHll3AKnRcO6wzenyOuNiWB5Sbw0PJ/37WCkaRxcF+R/9XueD1M1Sqi4+pn5iaghXDWUo69emZ4r8ZLL8F3TjR9WDQFqToxUNHn4Kl1TMdbr1BntE1QJxy/owQFG1x7193TnNEo7EVbKGFQuj7YmU6ow8kPlrTSsUJ70/l7pWHm3DCavydDGx647UfXS+3xETYbOHWKqW4yx4G6vfM20xkOiZ9z/isafIdhfWhmhZ+tmlT4AWulfoHhET5sIo=
@@ -13,4 +13,14 @@ deploy:
   region: us-east-1
   on:
     branch: master
+  skip_cleanup: true
+- provider: s3
+  access_key_id: AKIAI4UZ4LBMFLDFZ7UA
+  secret_access_key:
+    secure: zyExFiJM+qPRTT0ZGdejHKYKRgcn7/6aiuaKnNMrkDMKX25eXXJC6gkdMrNvrz0OnxWJzfhG7PauRkbXxN6VsyC5JUk4+uKnIw+fJKNhBIqLdyGHIl/ySBvqJVKtXyGDKhBIpR0sgT7p8JyQU6XhHhzZXwoqUcEytQe3MEHAA9TdYZ/OTc4pTvd8tZbZyED/AW5QXvnopFm1Psc77b50ilPQzCDF4qoB6znEt1pIOA30xhMUCDYnBlRF7iIAIgKxhCuIQxUQG/My3daaa15IX/yXrts9MJ8WHq6H+UyXXuSaBxtL6XVCEQzuLwWMYvJsH3pPy1groyFFedANx/x42fq2z0wGWJHGdQEXnSt1IhCi95swuK/k2YqPsoGvYkJ3+sdmga7AdTXwDXoK25SfGL6Dz/ZT4fMUbRlChrzPMGvzTKhHll3AKnRcO6wzenyOuNiWB5Sbw0PJ/37WCkaRxcF+R/9XueD1M1Sqi4+pn5iaghXDWUo69emZ4r8ZLL8F3TjR9WDQFqToxUNHn4Kl1TMdbr1BntE1QJxy/owQFG1x7193TnNEo7EVbKGFQuj7YmU6ow8kPlrTSsUJ70/l7pWHm3DCavydDGx647UfXS+3xETYbOHWKqW4yx4G6vfM20xkOiZ9z/isafIdhfWhmhZ+tmlT4AWulfoHhET5sIo=
+  bucket: bentley.blog
+  local_dir: public
+  region: us-east-1
+  on:
+    tags: true
   skip_cleanup: true
