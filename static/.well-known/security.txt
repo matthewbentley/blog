@@ -1,0 +1,5 @@
+Contact: matthew@bentley.link
+Encryption: https://bentley.link/pgp-key.asc
+Acknowledgement: 
+Policy: 
+signature: https://bentley.link/.well-known/security.txt.sig
