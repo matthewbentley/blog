@@ -3,7 +3,6 @@ before_script:
 - go get -u -v github.com/spf13/hugo
 script:
 - hugo --theme vienna -v
-- ls -la public
 deploy:
 - provider: s3
   access_key_id: AKIAI4UZ4LBMFLDFZ7UA
@@ -15,6 +14,7 @@ deploy:
   on:
     branch: master
   skip_cleanup: true
+  dot_match: true
 - provider: s3
   access_key_id: AKIAI4UZ4LBMFLDFZ7UA
   secret_access_key:
@@ -25,3 +25,4 @@ deploy:
   on:
     tags: true
   skip_cleanup: true
+  dot_match: true
