@@ -41,6 +41,10 @@ Linksys, since it requries physical access and admin access, with which one
 could already flash malicious firmware.  And more importantly, I hope it doesn't
 get fixed, so I can continue to use it (and recieve normal security updates).
 
+Also, I take no repsonsibility if you brick your router, anger the FCC, cause
+the downfall of western civilization, or anything else positive or negative
+comes from reading this post.
+
 Dead Ends
 ===
 
