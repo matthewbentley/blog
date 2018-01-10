@@ -52,6 +52,9 @@ file format (the `binwalk` tool, which I'll talk about later, was useful for
 this), but to no success.  I'm sure given more time I could figure it out, but I
 decided to move on to other options.
 
+Also, I have too many memories of spending all night trying to fix a bricked
+wrt54g, so I'd rather not mess with flashing firmware.
+
 Code injection via the web UI
 ---
 The web UI has `ping` and `traceroute` features.  I thought it might just do
@@ -69,7 +72,7 @@ if plugged in to the USB port.  This will be important soon.
 
 I decided to research vulnurabilities for the Linksys ea8300, and found the
 page `http://192.168.1.1/sysinfo.cgi` (I can't find the original source, so if
-you know it please let me know!).  It contais a bunch of information, some of
+you know it please let me know!).  It contains a bunch of information, some of
 which will become useful.
 
 Backup/restore
@@ -103,11 +106,11 @@ Then to re-tar-gz the files, and create a file with the first 13 bytes from the
 original backup followed by the new gzip.
 
 I tried to use the restore UI function with the new file, but got a error about
-a wrong file size...hmm.  So I looked at those 13 bytes (
-`dd if=backup.cfg bs=1 count=13 | hexdump -C`).  It seems to be
-"0x0002\n11107\n" (ASCII).  Well, it turns out the 11107 is the size of the
-gzip, in bytes.  So I updated that to the new file size, and retried.  The
-restore worked!
+a wrong file size...hmm...if it's complaining about the size, the size must be
+mentioned somewhere in the file.  So I looked at those 13 bytes (
+`dd if=backup.cfg bs=1 count=13 | hexdump -C`), which was "0x0002\n11107\n"
+(ASCII).  Well, it turns out the 11107 is the size of the gzip, in bytes.  So I
+updated that to the new file size, and retried.  The restore worked!
 
 The script
 ---
