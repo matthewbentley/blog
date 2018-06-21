@@ -2,7 +2,7 @@ language: go
 before_script:
 - go get -u -v github.com/spf13/hugo
 script:
-- hugo --theme vienna -v
+- HUGO_THEME=vienna hugo -v
 deploy:
 - provider: s3
   access_key_id: AKIAI4UZ4LBMFLDFZ7UA
