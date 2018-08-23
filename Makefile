@@ -1,9 +1,6 @@
-.PNOHY: all build upload
+.PNOHY: all build
 
-all: build upload
+all: build
 
 build:
 	hugo --theme=vienna -v
-
-upload:
-	s3_website push
